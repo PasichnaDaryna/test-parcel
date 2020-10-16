@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "predeploy": "npm run build -- --public-url='/goit-js-hw-10-food-service/'",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -17,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/PasichnaDaryna/test-parcel/issues"
   },
-  "homepage": "https://github.com/PasichnaDaryna/test-parcel#readme",
+  "homepage": "https://pasichnadaryna.github.io/goit-js-hw-10-food-service/",
   "dependencies": {
     "acorn": "^7.4.1",
     "acorn-globals": "^4.3.4",
@@ -487,6 +489,8 @@
     "wrappy": "^1.0.2"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "prettier": "2.1.2",
+    "sass": "^1.27.0"
   }
 }
